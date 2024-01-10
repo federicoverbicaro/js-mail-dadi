@@ -24,3 +24,23 @@ buttonHtml.addEventListener("click", function(){
 })
 
 
+const buttonHtml2 = document.getElementById("btnEmail")
+
+
+buttonHtml2.addEventListener("click",function(){
+
+    const emailHtml = document.getElementById("emailUtente").value
+
+    const iscritti = [
+        'utente1@example.com',
+        'utente2@example.com',
+        'utente3@example.com',
+        'utente4@example.com',
+        'utente5@example.com'
+    ]
+
+    for (let i = 0 ; i < iscritti.length; i++){
+        let controlloEmail = false 
+
+    }
+})
