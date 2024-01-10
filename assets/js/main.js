@@ -24,6 +24,9 @@ buttonHtml.addEventListener("click", function(){
 })
 
 
+
+
+
 const buttonHtml2 = document.getElementById("btnEmail")
 
 
@@ -39,8 +42,20 @@ buttonHtml2.addEventListener("click",function(){
         'utente5@example.com'
     ]
 
-    for (let i = 0 ; i < iscritti.length; i++){
-        let controlloEmail = false 
+    let controlloEmail = false
 
+
+    for (let i = 0 ; i < iscritti.length; i++){
+        if (emailHtml === iscritti [i]){
+            controlloEmail = true
+            break
+        }
+    }
+     
+    if (controlloEmail){
+        document.getElementById("acesso").innerHTML = "acesso consentito"
+    }else{
+        document.getElementById("acesso").innerHTML = "acesso non consentito"
+        
     }
 })
